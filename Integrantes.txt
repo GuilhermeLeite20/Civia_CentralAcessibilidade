@@ -6,5 +6,3 @@ Evandro Yuji Kaibara de Oliveira - RM559274
 Guilherme Rodrigues Leite - RM560131
 Luís Filipe Crivellaro - RM560877
 Pedro Henrique Batista Bergamin - RM559443
-
-Link do repositório: [PREENCHER APÓS PUBLICAR NO GITHUB]
