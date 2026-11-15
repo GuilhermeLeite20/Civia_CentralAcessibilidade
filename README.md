@@ -16,21 +16,17 @@ Aplicação desktop simples em **C# e Windows Forms (.NET 8)** para cadastrar e 
 | **Problema, em uma frase** | Barreiras de informação e acesso dificultam deslocamentos e a participação de pessoas com deficiência na cidade. |
 | **Como funciona** | O operador registra a barreira ou o ponto de apoio, informa localização e público beneficiado, acompanha o status e consulta os dados em um painel local. |
 | **O que cada parte faz** | `Models/`: representa os registros; `Services/`: valida fluxo e salva JSON; `Views/`: telas de cadastro e consulta. |
-| **Link do repositório** | **PREENCHER APÓS PUBLICAR NO GITHUB** |
+| **Link do repositório** | https://github.com/GuilhermeLeite20/Civia_CentralAcessibilidade |
 | **Indicador de impacto** | Número de barreiras registradas, barreiras concluídas e pontos de apoio identificados. O protótipo demonstra o cálculo, não comprova impacto real. |
 | **ODS conectados** | **ODS 10**: ampliar inclusão e reduzir desigualdades (meta 10.2). **ODS 11**: apoiar cidades e transporte mais acessíveis (meta 11.2). |
 
-## O problema e quem pode ser beneficiado
+## O problema
 
 O CIVIA parte de dificuldades cotidianas, como sinalizações difíceis de ler e avisos sonoros sem alternativa visual. O **CIVIA Desk** traduz parte dessa proposta para um atendimento comunitário: um terminal que concentra relatos e permite acompanhar o tratamento de cada registro.
-
-**Perfil de pessoa beneficiada:** cidadão com deficiência visual ou auditiva que utiliza serviços e transporte público em Santo André/SP. Trata-se de um público real, porém **a equipe ainda deverá validar as necessidades com pessoas desse público**. Os exemplos incluídos no sistema são **100% fictícios** e não devem ser apresentados como ocorrências reais.
 
 ## Prévia conceitual da interface
 
 ![Prévia ilustrativa do painel CIVIA Desk](docs/preview_conceitual.png)
-
-*Ilustração de referência visual; não é captura do aplicativo executado.*
 
 ## Funcionalidades
 
@@ -73,22 +69,15 @@ CIVIA_Desk_Projeto/
 │       └── FrmCadastro.cs
 ├── .github/workflows/build.yml
 ├── README.md
-├── CHANGELOG.md
-├── GUIA_GIT_PR.md
-├── prompts.md
 ├── integrantes.txt
-└── entrega-teams.txt
 ```
-
-A interface é construída em código nos arquivos `Views/`, para ficar fácil de compreender sem depender de arquivos de Designer gerados automaticamente.
-
 ## Como executar no Visual Studio
 
-**Requisitos:** Windows 10/11; Visual Studio 2022 com a carga de trabalho **Desenvolvimento para desktop com .NET**; SDK do **.NET 8**.
+**Requisitos:** Windows 10/11; Visual Studio com a carga de trabalho **Desenvolvimento para desktop com .NET**; SDK do **.NET 8**.
 
 1. Extraia o ZIP em uma pasta do Windows.
 2. Abra **`CIVIA.Desk.sln`** no Visual Studio.
-3. Aguarde a restauração do projeto (não há pacotes extras).
+3. Aguarde a restauração do projeto.
 4. Selecione **CIVIA.Desk** como projeto de inicialização, se necessário.
 5. Pressione **F5** para executar.
 6. Vá a **Visão geral** e clique em **Inserir exemplos fictícios** para uma demonstração, ou use **+ Novo registro** para cadastrar.
@@ -129,18 +118,6 @@ Para redefinir os registros em um ambiente de testes, feche o aplicativo e **fa�
 - **Classe `RegistroService`**: coordena cadastro, consulta, alteração de status, exclusão e exportação.
 - **Classe `RepositorioJson`**: responsável por leitura e gravação em arquivo.
 - **Formulários `FrmPrincipal` e `FrmCadastro`**: separação entre interface e regras da aplicação.
-
-## Evidências recomendadas para o Teams
-
-1. Print da visão geral com indicadores.
-2. Print do cadastro validando campos.
-3. Print da lista com um registro resolvido.
-4. Print do arquivo JSON ou CSV gerado.
-5. Link do repositório e do PR aberto ou concluído.
-
-## Limitações e próximos passos
-
-Este protótipo não substitui a plataforma CIVIA, não monitora riscos reais e não verifica a veracidade dos registros. Uma versão futura poderia autenticar operadores, validar relatos com instituições e integrar dados oficiais de acessibilidade. O MVP principal pode continuar independente em outra tecnologia.
 
 ## Integrantes
 
