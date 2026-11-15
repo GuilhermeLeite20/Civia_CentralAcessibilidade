@@ -1,0 +1,22 @@
+name: Build Windows Forms
+
+on:
+  push:
+    branches: [main, "feat/**"]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Instalar .NET 8
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - name: Restaurar
+        run: dotnet restore CIVIA.Desk.sln
+      - name: Compilar
+        run: dotnet build CIVIA.Desk.sln --configuration Release --no-restore

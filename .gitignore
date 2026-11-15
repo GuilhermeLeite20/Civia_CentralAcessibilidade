@@ -1,0 +1,18 @@
+# Visual Studio e .NET
+.vs/
+**/bin/
+**/obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+TestResults/
+
+# Dados locais da aplicação
+registros.json
+registros.json.tmp
+*.log
+
+# Sistemas operacionais
+.DS_Store
+Thumbs.db
