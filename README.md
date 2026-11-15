@@ -130,10 +130,6 @@ Para redefinir os registros em um ambiente de testes, feche o aplicativo e **fa�
 - **Classe `RepositorioJson`**: responsável por leitura e gravação em arquivo.
 - **Formulários `FrmPrincipal` e `FrmCadastro`**: separação entre interface e regras da aplicação.
 
-## Versionamento semântico e Pull Request
-
-Versão inicial proposta: **`v0.1.0`**. O fluxo de commits, branch e PR está em **[GUIA_GIT_PR.md](GUIA_GIT_PR.md)**. O PR precisa ser criado **depois que a equipe publicar o projeto em um repositório próprio**; ele não é criado automaticamente pelo ZIP.
-
 ## Evidências recomendadas para o Teams
 
 1. Print da visão geral com indicadores.
@@ -157,5 +153,3 @@ Este protótipo não substitui a plataforma CIVIA, não monitora riscos reais e 
 | Pedro Henrique Batista Bergamin | 559443 |
 
 ---
-
-**CIVIA — A cidade se adapta a você.**
